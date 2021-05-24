@@ -25,6 +25,6 @@ app.get("/pdf", async (req, res) => {
     res.contentType("application/pdf");
     res.send(pdf);
 })
-app.listen(3002, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server started");
 });
